@@ -1,0 +1,5 @@
+{
+  "name":"nexaserve","version":"1.0.0","private":true,
+  "scripts":{"setup":"npm install && npm install --prefix server && npm install --prefix client","dev":"concurrently -k -n API,WEB \"npm run dev --prefix server\" \"npm run dev --prefix client\""},
+  "devDependencies":{"concurrently":"^9.1.2"}
+}
